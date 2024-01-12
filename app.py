@@ -46,7 +46,7 @@ def get_weekday():
         return jsonify({'error': 'Invalid date format. Please use DD.MM.YYYY'}), 400
     
 @app.route('/get_multi', methods=['GET'])
-def get_weekday():
+def get_multi():
     number = request.args.get('number', default = '', type = int)
     try:
         date_obj = number * number
